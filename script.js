@@ -2,14 +2,6 @@
 let btn = document.querySelector('#new-quote');
 let quote = document.querySelector('.quote');
 let person = document.querySelector('.person');
-const bgImgs = [
-"url(./img/A.png) no-repeat center center/ cover", 
-"url(./img/B.png) no-repeat center center/ cover", 
-"url(./img/C.png) no-repeat center center/ cover",
-"url(./img/D.jpg) no-repeat center center/ cover",
-"url(./img/E.jpg) no-repeat center center/ cover",
-"url(./img/F.jpg) no-repeat center center/ cover"
-];
 let body = document.querySelector('body');
 
 const quotes = [
@@ -73,8 +65,6 @@ const quotes = [
 
 btn.addEventListener('click', function(){
     let random = Math.floor(Math.random() * quotes.length);
-    let randomBackGroundIndex = Math.floor(Math.random() * bgImgs.length)
-    body.style.background = bgImgs[randomBackGroundIndex];
     quote.innerText = quotes[random].quote;
     person.innerText = quotes[random].person;
 })
