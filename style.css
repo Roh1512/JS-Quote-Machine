@@ -42,6 +42,7 @@ body {
     padding: 50px 40px;
     box-shadow: 0 0 10px;
     position: relative;
+    transition-delay: 1s;
 }
 
 .main-content .text-area {
